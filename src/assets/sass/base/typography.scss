@@ -96,6 +96,10 @@ blockquote {
 ol, ul {
   li {
     margin-bottom: 10px;
+    ul {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
   }
 }
 
