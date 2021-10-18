@@ -7,9 +7,128 @@
 */
 
 .h1 {
-  font-family: $base-heading-font-family;
+  font-size: 40px;
+  font-weight: 400;
+  margin: 0 0 30px 0;
+}
+
+.h2 {
+  font-size: 26px;
+  margin: 0 0 20px 0;
+  font-weight: 400;
+}
+
+.h3 {
+  font-size: 18px;
+  margin: 40px 0 20px 0;
+  font-weight: 500;
+}
+
+.p {
+  font-size: 15px;
+  line-height: 30px;
+  margin: 0 0 20px 0;
+  &.leadin {
+    border-left: 3px solid $color-secondary;
+    padding-left: 25px;
+    font-size: 22px;
+    line-height: 38px;
+  }
+  &.caption {
+    font-size: 12px;
+    margin: 5px 0 0 0;
+    color: grey;
+  }
 }
 
 h1 {
   @extend .h1;
+}
+
+h2 {
+  @extend .h2;
+}
+
+h3 {
+  @extend .h3;
+}
+
+p {
+  @extend .p;
+  a {
+    color: $color-secondary;
+    transition: 300ms ease-in-out all;
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}
+
+blockquote {
+  margin: 0;
+  font-size: 24px;
+  line-height: 35px;
+  font-weight: 500;
+  color: #6C6C6C;
+  font-style:initial;
+  position: relative;
+  &::before,
+  &::after {
+    font-size: 64px;
+    line-height: 0px;
+    position: absolute;
+  }
+  &::before {
+    content: "“";
+    left: -30px;
+    top: -5px;
+  }
+  &::after {
+    content: "”";
+    bottom: 0px;
+    margin-left: 10px;
+  }
+}
+
+ol, ul {
+  li {
+    margin-bottom: 10px;
+  }
+}
+
+.citation {
+  margin: 10px 0 0 0;
+  font-weight: 400;
+  color: #6C6C6C;
+  font-size: 18px;
+  font-family: "Poppins",sans-serif;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.t-gold {
+  color: $color-secondary;
+}
+
+.t-bold {
+  font-weight: 700;
+}
+
+.t-semi-bold {
+  font-weight: 600;
+}
+
+.t-bold--italic {
+  font-style: italic;
+  font-weight: 700;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mt-0 {
+  margin-top: 0;
 }

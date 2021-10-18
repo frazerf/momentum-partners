@@ -1,0 +1,37 @@
+.btn {
+    border: 1px solid $color-secondary;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    color: $color-secondary;
+    transition: 300ms ease-in-out all;
+    display: inline-flex;
+    font-size: 15px;
+    span {
+        width: 17px;
+        height: initial;
+        display: flex;
+        margin-left: 10px;
+        svg {
+            width: 100%;
+            height: initial;
+            g {
+                path {
+                    fill: $color-secondary !important;
+                    transition: 300ms ease-in-out all;
+                }
+            }
+        }
+    }
+    &:hover {
+        background: $color-secondary;
+        color: $color-primary;
+        svg {
+            g {
+                path {
+                    fill: $color-primary !important;
+                }
+            }
+        }
+    }
+}

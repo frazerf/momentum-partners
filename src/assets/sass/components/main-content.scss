@@ -10,3 +10,40 @@
     text-align: center;
     width: 100%;
 }
+
+.momentum-icon {
+    width: 100px;
+    display: block;
+    margin: 0 auto 20px;
+    img {
+        width: 100%;
+    }
+}
+
+.quote {
+    background: $color-tertiary;
+    &__line {
+        border-left: 3px solid $color-secondary;
+        padding-left: 25px;
+    }
+}
+
+.info-box {
+    background-color: $color-tertiary;
+    padding: 40px;
+}
+
+.contact-container {
+    background: #F6F6F6;
+    padding: 40px;
+}
+
+.contact-info {
+    &__item {
+        display: flex;
+        .image {
+            width: 80px;
+        }
+        margin-bottom: 30px;
+    }
+}

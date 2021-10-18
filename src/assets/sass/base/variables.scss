@@ -17,8 +17,10 @@
  * Base font family
 */
 
-$base-font-family: "Open Sans", sans-serif;
-$base-heading-font-family: "SofiaProBold", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300;1,700&display=swap');
+
+
+$base-font-family: 'Poppins', sans-serif;
 /*
  * Base font sizes
 */
@@ -56,3 +58,6 @@ $base-line-height: 1.5 !default;
 
 $color-white: #ffffff !default;
 $color-black: #000000 !default;
+$color-primary: #223C37;
+$color-secondary: #B6B2A3;
+$color-tertiary: #C5DCD8;

@@ -1,0 +1,34 @@
+.hero {
+    height: 70vh;
+    width: 100%;
+    position: relative;
+    &--large {
+        height: 90vh;
+    }
+    &__image {
+        height: 100%;
+        position: relative;
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        .hero__overlay {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            background: rgba($color: #223C37, $alpha: 0.8);
+        }
+
+    }
+    &__content {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+}
