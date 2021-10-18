@@ -27,10 +27,14 @@
         <h2 class="t-semi-bold">Get in touch</h2>
       </div>
       <div class="col-md-7 col-12">
-        <form name="contact-form" netlify>
-          <input placeholder="Name..." type="text" />
-          <input required placeholder="Email..." type="email" />
-          <textarea placeholder="Message"></textarea>
+        <form name="contact-form" method="POST" netlify-honeypot="bot-field" data-netlify-recaptcha="true" netlify>
+          <p class="hidden">
+            <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+          </p>
+          <input placeholder="Name..." name="name" type="text" />
+          <input required placeholder="Email..." name="email" type="email" />
+          <textarea name="message" placeholder="Message"></textarea>
+          <div data-netlify-recaptcha="true"></div>
           <input value="Send" type="submit" />
         </form>
       </div>
