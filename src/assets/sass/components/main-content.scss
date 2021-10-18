@@ -35,10 +35,17 @@
 
 .contact-container {
     background: #F6F6F6;
-    padding: 40px;
+    padding: 20px;
+    @include media-breakpoint-up(sm) {
+        padding: 40px;
+    }
 }
 
 .contact-info {
+    margin-top: 40px;
+    @include media-breakpoint-up(sm) {
+        margin-top: 0;
+    }
     &__item {
         display: flex;
         .image {
