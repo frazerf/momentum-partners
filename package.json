@@ -8,10 +8,7 @@
     },
     "author": "Kieran Brown",
     "license": "ISC",
-    "dependencies": {
-        "sass": "^1.43.2",
-        "sass-loader": "^12.2.0"
-    },
+    "dependencies": {},
     "devDependencies": {
         "@babel/core": "^7.15.8",
         "@babel/preset-env": "^7.15.8",
@@ -29,6 +26,7 @@
         "lodash": "^4.17.21",
         "lodash.mergewith": ">=4.6.2",
         "mixin-deep": "^2.0.1",
+        "node-sass": "^6.0.0",
         "set-value": "^3.0.2"
     }
 }
